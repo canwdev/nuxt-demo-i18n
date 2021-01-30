@@ -28,7 +28,6 @@ module.exports = {
     cookieKey: 'i18n_redirected',
     onlyOnRoot: true,  // recommended
     alwaysRedirect: true,
-    cookieCrossOrigin: true
   },
   vueI18n: {
     fallbackLocale: 'en',

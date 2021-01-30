@@ -16,14 +16,20 @@ module.exports = {
       code: 'jp',
       iso: 'ja-JP',
       file: 'ja-JP.js',
-      name: '日本語',
+      name: '日本語'
     }
   ],
   defaultLocale: 'en',
   vueI18nLoader: true, // <i18n> Tag
   lazy: true,
   langDir: '/assets/i18n/lang/',
-  detectBrowserLanguage: true,
+  detectBrowserLanguage: {
+    useCookie: true,
+    cookieKey: 'i18n_redirected',
+    onlyOnRoot: true,  // recommended
+    alwaysRedirect: true,
+    cookieCrossOrigin: true
+  },
   vueI18n: {
     fallbackLocale: 'en',
     // Not working when `lazy` is enabled

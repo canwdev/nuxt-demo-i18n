@@ -10,7 +10,10 @@
   },
   "dependencies": {
     "core-js": "^3.8.2",
-    "nuxt": "^2.14.12"
+    "nuxt": "^2.14.12",
+    "nuxt-i18n": "^6.18.0"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@nuxt/types": "~2.14.0"
+  }
 }

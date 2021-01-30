@@ -1,5 +1,17 @@
 # nuxt-demo-i18n
 
+Nuxt.js i18n modules Demo
+
+![Screenshot](./screenshot.png)
+
+## Contents
+
+- [x] Language switcher components
+- [x] Multiple page switch
+- [x] Lazy Loading
+- [x] Component `<i18n/>` tag
+- [x] Detect browser language
+
 ## Build Setup
 
 ```bash

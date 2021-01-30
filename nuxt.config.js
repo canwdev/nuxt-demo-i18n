@@ -1,3 +1,5 @@
+const i18n = require('./assets/i18n')
+
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -37,40 +39,7 @@ export default {
   ],
 
 
-  i18n: {
-    locales: [
-      {
-        code: 'en',
-        iso: 'en-US',
-        name: 'English',
-      },
-      {
-        code: 'cn',
-        iso: 'zh-CN',
-        name: '中文',
-      },
-      {
-        code: 'jp',
-        iso: 'ja-JP',
-        name: '日本語',
-      }
-    ],
-    defaultLocale: 'en',
-    vueI18n: {
-      fallbackLocale: 'en',
-      messages: {
-        en: {
-          welcome: 'Welcome'
-        },
-        cn: {
-          welcome: '欢迎'
-        },
-        jp: {
-          welcome: 'ようこそ'
-        }
-      }
-    }
-  },
+  i18n,
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {

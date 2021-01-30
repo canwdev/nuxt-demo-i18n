@@ -1,50 +1,17 @@
 <template>
-  <div class="container">
-    <div>
-      <Logo />
-      <h1 class="title">
-        {{ $t('welcome') }}
-      </h1>
-
-      <hr>
-
-      <LanguageSwitcher/>
-
-    </div>
+  <div>
+    <ul>
+      <li>
+        <NLink to="test-lazy">Test Lazy</NLink>
+      </li>
+      <li>
+        <NLink to="test-tag">Test Tag</NLink>
+      </li>
+    </ul>
   </div>
 </template>
 
 <script>
-export default {
-}
+export default {}
 </script>
 
-<style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
-  font-family:
-    'Quicksand',
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-</style>

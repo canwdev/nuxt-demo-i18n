@@ -17,6 +17,7 @@ export default {
 
   // Global CSS: https://go.nuxtjs.dev/config-css
   css: [
+    '~/assets/style/base.css'
   ],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
@@ -40,15 +41,18 @@ export default {
     locales: [
       {
         code: 'en',
-        name: 'English'
+        iso: 'en-US',
+        name: 'English',
       },
       {
-        code: 'es',
-        name: 'Español'
+        code: 'cn',
+        iso: 'zh-CN',
+        name: '中文',
       },
       {
-        code: 'fr',
-        name: 'Français'
+        code: 'jp',
+        iso: 'ja-JP',
+        name: '日本語',
       }
     ],
     defaultLocale: 'en',
@@ -58,11 +62,11 @@ export default {
         en: {
           welcome: 'Welcome'
         },
-        fr: {
-          welcome: 'Bienvenue'
+        cn: {
+          welcome: '欢迎'
         },
-        es: {
-          welcome: 'Bienvenido'
+        jp: {
+          welcome: 'ようこそ'
         }
       }
     }
